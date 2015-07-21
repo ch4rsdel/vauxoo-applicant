@@ -7,10 +7,13 @@ class CalculatorClass(object):
     """
     Your class documentation here
     """
-
     def sum(self, num_list):
-        """
-        Your method documentation here
-        """
-        # your sum code here
-        return "not implement yet"  # Remove this dummy line
+		
+		valor = reduce(lambda x,y:x+y,num_list)
+		return valor
+		
+		
+		
+sumador = CalculatorClass();
+
+print sumador.sum([1,2,3,4,5]);
